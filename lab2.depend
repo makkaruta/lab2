@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1543241889 source:c:\users\user\documents\progtech\lab2\main.cpp
+	<iostream>
+	<sstream>
+	<fstream>
+
+1543226010 source:c:\users\user\documents\progtech\lab2\word.cpp
+	"WORD.h"
+
+1543226010 c:\users\user\documents\progtech\lab2\word.h
+
