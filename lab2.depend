@@ -9,3 +9,17 @@
 
 1543226010 c:\users\user\documents\progtech\lab2\word.h
 
+1543248337 source:c:\users\user\documents\progtech\laba2\lab2\word.cpp
+	"WORD.h"
+
+1543248554 c:\users\user\documents\progtech\laba2\lab2\word.h
+	<iostream>
+	<sstream>
+	<fstream>
+
+1543248296 source:c:\users\user\documents\progtech\laba2\lab2\main.cpp
+	"WORD.h"
+	<iostream>
+	<sstream>
+	<fstream>
+

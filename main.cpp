@@ -1,6 +1,6 @@
 // Технологии программирования: Лабораторная работа №2
 
-//#include "WORD.h"
+#include "WORD.h"
 #include <iostream>
 #include <sstream>
 #include <fstream>
@@ -12,7 +12,8 @@ int main()
     setlocale(LC_ALL, "RUS");
     stringstream ss;
     string str;
-    string buff;
+    string temp;
+    WORD buff;
     ifstream fin;
     fin.open("test.txt");
     try
@@ -29,9 +30,11 @@ int main()
     {
         getline(fin, str);
         ss << str;
-        while (ss >> buff)
+        while (ss >> temp)
         {
-            cout << buff << "_";
+            buff.setword(temp);
+            buff.change();
+            cout << buff << " ";
         }
         cout << endl;
         ss.clear();

@@ -1,15 +1,18 @@
 #pragma once
 
+#include <iostream>
+#include <sstream>
+#include <fstream>
+
+using namespace std;
+
 class WORD
 {
 private:
 	string word;
 public:
-	WORD();
-	//WORD(int d);
-    //WORD(const WORD &w);
-	~WORD();
-	void setword(string str);
+	void setword(string wrd);
 	string getword() const;
     void change();
+    friend ostream& operator <<(ostream& output, WORD& pointer);
 };
