@@ -1,9 +1,11 @@
-// Технологии программирования: Лабораторная работа №2
+п»ї// РўРµС…РЅРѕР»РѕРіРёРё РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ: Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° в„–2
 
 #include "WORD.h"
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#define ERROR_101 101
+#define ERROR_102 102
 
 using namespace std;
 
@@ -19,12 +21,12 @@ int main()
     try
     {
         if (!fin.is_open())
-            throw 101;
+            throw ERROR_101;
     }
     catch(int error)
     {
-        cout << "Файла с таким именем не существует в директории!" << endl;
-        return 101;
+        cout << "Р¤Р°Р№Р»Р° СЃ С‚Р°РєРёРј РёРјРµРЅРµРј РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РІ РґРёСЂРµРєС‚РѕСЂРёРё!" << endl;
+        return ERROR_101;
     }
     while (!fin.eof())
     {
@@ -38,6 +40,16 @@ int main()
         }
         cout << endl;
         ss.clear();
+    }
+    try
+    {
+        if (!fin.is_open())
+            throw ERROR_102;
+    }
+    catch(int error)
+    {
+        cout << "Р¤Р°Р№Р» РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р·Р°РєСЂС‹С‚!" << endl;
+        return ERROR_102;
     }
     fin.close();
     return 0;

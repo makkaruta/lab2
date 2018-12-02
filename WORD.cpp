@@ -1,4 +1,4 @@
-#include "WORD.h"
+﻿#include "WORD.h"
 
 void WORD::setword(string wrd)
 {
